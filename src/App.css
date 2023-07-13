@@ -1,38 +1,140 @@
-.App {
+
+li{
+  list-style-type: none;
+  display:inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  
+}
+a:hover,a:active{
+  
+  color: hsl(224, 100%, 50%);
+}
+label{
+  display: none;
+}
+input{
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+input::placeholder{
   text-align: center;
 }
+.post{
+ height: 150px;
+  
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 200px;
+  position: relative;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  min-width: 300px;
+}
+.postdate{
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  opacity:0.7;
+  font-size: 14px;
+ 
+} 
+h3{
+  position: absolute;
+  top: 10px;
+  left:15px;
+  color: dodgerblue;
+  text-decoration: underline;
+  text-transform: uppercase;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.postbody{
+  position: absolute;
+  color: rgb(41, 35, 35);
+  top:30%;
+  left:10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.newpost{
+  border: 3px solid gray;
+  max-width: 700px;
+  min-height: 70vh;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
+.titlelabel{
+  display: block;
+  padding: 10px;
+}
+.titleinput{
+  display: block;
+  max-width: 250px;
+  border: 2px solid gray;
+  margin: 5px;
+ 
+}
+.bodylabel{
+  display: block;
+  padding: 10px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.bodyinput  {
+  min-height: 200px;
+  display: block;
+  border: 2px solid gray;
+  margin: 5px;
+}
+.submit{
+  float: right;
+  margin: 10px;
+  padding: 5px 10px;
+  
+}
+.submit:hover,submit:active{
+  background-color: chartreuse;
+  color:black;
+  border-radius: 5px;
+}
+.about{
+  font-size: larger;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.singlepost{
+  min-width: 300px;
+  min-height: 50vh;
+  border-radius: 6px;
+  border:3px solid grey;
+  margin-top: 20px;
+  padding: 10px;
+  position: relative;
+
+}
+.singlepost button{
+position: absolute;
+bottom: 5px;
+right: 5px;
+
+padding:5px 10px;
+border: none;
+outline: none;
+border-radius: 5px;
+background-color: gray;
+max-width: 400px;
+}
+.singlepost button:active{
+  background-color: red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.posttime{
+  position: absolute;
+  bottom: 5px;
+  left:5px;
 }
